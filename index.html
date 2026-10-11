@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>DevisFlash — Devis pro en 2 minutes pour artisans du bâtiment</title>
+<meta name="description" content="Créez des devis professionnels en 2 minutes depuis votre téléphone. PDF aux normes, mentions légales incluses. 39 €/mois, sans engagement. Essai gratuit.">
+<style>
+:root{--bg:#0f172a;--card:#1e293b;--accent:#f59e0b;--accent-d:#b45309;--text:#f1f5f9;--muted:#94a3b8;--green:#4ade80}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+.wrap{max-width:860px;margin:0 auto;padding:0 20px}
+header.top{display:flex;justify-content:space-between;align-items:center;padding:16px 20px;max-width:860px;margin:0 auto}
+.logo{font-weight:800;font-size:1.3rem}.logo span{color:var(--accent)}
+.btn{display:inline-block;background:var(--accent);color:#1c1005;border-radius:10px;padding:14px 28px;font-weight:800;text-decoration:none;font-size:1.05rem;border:none;cursor:pointer}
+.btn:hover{background:#fbbf24}.btn.ghost{background:#334155;color:var(--text)}
+.hero{text-align:center;padding:48px 20px 32px}
+.badge{display:inline-block;background:#451a03;color:var(--accent);border:1px solid var(--accent);border-radius:999px;padding:5px 16px;font-size:.82rem;font-weight:700;margin-bottom:16px}
+h1{font-size:2rem;line-height:1.25;margin-bottom:14px}
+.hero p.sub{color:var(--muted);font-size:1.1rem;max-width:600px;margin:0 auto 24px}
+.stats{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin:28px 0}
+.stat{background:var(--card);border-radius:12px;padding:14px 20px;text-align:center;min-width:140px}
+.stat b{font-size:1.5rem;color:var(--accent);display:block}.stat span{color:var(--muted);font-size:.85rem}
+section{padding:36px 0}
+h2{font-size:1.5rem;margin-bottom:18px;text-align:center}
+.card{background:var(--card);border-radius:14px;padding:24px;margin:14px 0}
+.grid{display:grid;grid-template-columns:1fr;gap:12px}
+@media(min-width:640px){.grid{grid-template-columns:1fr 1fr}}
+.feat h3{font-size:1.05rem;margin-bottom:6px}.feat p{color:var(--muted);font-size:.95rem}
+.steps{counter-reset:s}.step{display:flex;gap:14px;margin:16px 0;align-items:flex-start}
+.step n{background:var(--accent);color:#1c1005;font-weight:800;border-radius:50%;width:34px;height:34px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.price-card{background:var(--card);border:2px solid var(--accent);border-radius:16px;padding:32px;text-align:center;max-width:420px;margin:0 auto}
+.price{font-size:3rem;font-weight:800;color:var(--accent)}.price small{font-size:1rem;color:var(--muted);font-weight:400}
+ul.check{list-style:none;margin:18px 0;text-align:left}
+ul.check li{padding:7px 0}ul.check li::before{content:"✓ ";color:var(--green);font-weight:700}
+details{background:var(--card);border-radius:10px;padding:16px;margin:10px 0}
+summary{font-weight:700;cursor:pointer}
+details p{color:var(--muted);margin-top:8px;font-size:.95rem}
+.cta-final{text-align:center;padding:40px 20px}
+footer{text-align:center;color:var(--muted);font-size:.85rem;padding:28px 0;border-top:1px solid #1e293b}
+.mock{background:var(--card);border-radius:18px;padding:20px;max-width:340px;margin:28px auto;border:1px solid #334155}
+.mock .doc{background:#fff;color:#111;border-radius:8px;padding:16px;font-size:.72rem;line-height:1.5}
+.mock .doc b{color:#000}.mock .doc .ttl{font-size:.95rem;font-weight:800;border-bottom:2px solid var(--accent);padding-bottom:6px;margin-bottom:8px}
+.mock .doc table{width:100%;border-collapse:collapse;margin:8px 0}.mock .doc td{padding:3px 0;border-bottom:1px solid #eee}
+.mock .doc .tot{text-align:right;font-weight:800;margin-top:6px}
+</style>
+</head>
+<body>
+<header class="top">
+<div class="logo">⚡ Devis<span>Flash</span></div>
+<a class="btn" href="app.html" style="padding:10px 20px;font-size:.95rem">Essai gratuit</a>
+</header>
+
+<div class="hero wrap">
+<span class="badge">POUR ARTISANS DU BÂTIMENT</span>
+<h1>Vos devis pro en 2 minutes,<br>depuis le chantier.</h1>
+<p class="sub">Fini Word et Excel le soir. Créez un devis sur votre téléphone, envoyez le PDF au client avant même de quitter le chantier.</p>
+<a class="btn" href="app.html">⚡ Essayer gratuitement</a>
+<p style="color:var(--muted);font-size:.85rem;margin-top:10px">Sans engagement · Sans carte bancaire</p>
+
+<div class="mock">
+<div class="doc">
+<div class="ttl">DEVIS N° DEV-2026-0042</div>
+<b>Martin Plomberie</b><br>12 rue des Lilas, 69003 Lyon<br>SIRET : 123 456 789 00012
+<table>
+<tr><td>Remplacement chaudière</td><td align="right">2 400,00 €</td></tr>
+<tr><td>Main d'œuvre (8h)</td><td align="right">480,00 €</td></tr>
+</table>
+<div class="tot">Total HT : 2 880,00 €<br>TVA 10% : 288,00 €<br>Total TTC : 3 168,00 €</div>
+</div>
+</div>
+</div>
+
+<div class="wrap">
+<div class="stats">
+<div class="stat"><b>2 min</b><span>par devis</span></div>
+<div class="stat"><b>3-5 h</b><span>récupérées / semaine</span></div>
+<div class="stat"><b>100%</b><span>mentions légales incluses</span></div>
+</div>
+
+<section>
+<h2>Pourquoi les artisans passent à DevisFlash</h2>
+<div class="grid">
+<div class="card feat"><h3>📱 Mobile d'abord</h3><p>Conçu pour le téléphone. Faites votre devis entre deux chantiers, pas le dimanche soir au bureau.</p></div>
+<div class="card feat"><h3>📄 PDF professionnel</h3><p>Devis au format pro avec votre logo, vos infos, numérotation automatique. Le client prend au sérieux.</p></div>
+<div class="card feat"><h3>⚖️ Mentions légales auto</h3><p>TVA, garantie décennale, acompte 30 %, validité du devis : tout est intégré, conforme au droit français.</p></div>
+<div class="card feat"><h3>📂 Historique complet</h3><p>Retrouvez tous vos devis : brouillons, envoyés, acceptés. Transformez un devis accepté en facture.</p></div>
+</div>
+</section>
+
+<section>
+<h2>Comment ça marche</h2>
+<div class="card">
+<div class="step"><n>1</n><div><b>Renseignez votre entreprise une fois</b><br><span style="color:var(--muted)">Nom, SIRET, adresse : réutilisés sur tous vos devis.</span></div></div>
+<div class="step"><n>2</n><div><b>Créez le devis en 2 minutes</b><br><span style="color:var(--muted)">Client, lignes de travaux, TVA : le total se calcule tout seul.</span></div></div>
+<div class="step"><n>3</n><div><b>Envoyez le PDF</b><br><span style="color:var(--muted)">Téléchargez ou imprimez. Le devis part avant même la concurrence.</span></div></div>
+</div>
+</section>
+
+<section>
+<h2>Un seul tarif, simple</h2>
+<div class="price-card">
+<div class="price">39 €<small>/mois</small></div>
+<p style="color:var(--muted)">Sans engagement · Résiliable à tout moment</p>
+<ul class="check">
+<li>Devis illimités</li>
+<li>PDF professionnels</li>
+<li>Mentions légales françaises incluses</li>
+<li>Historique et suivi des statuts</li>
+<li>Fonctionne sur téléphone, tablette, ordinateur</li>
+</ul>
+<a class="btn" href="app.html" style="width:100%">⚡ Commencer l'essai gratuit</a>
+<p style="color:var(--muted);font-size:.85rem;margin-top:10px">14 jours gratuits, sans carte bancaire</p>
+</div>
+</section>
+
+<section>
+<h2>Questions fréquentes</h2>
+<details><summary>Mes données sont-elles en sécurité ?</summary><p>Oui. Vos devis sont stockés de façon chiffrée et isolée par compte. Personne d'autre n'y a accès.</p></details>
+<details><summary>Puis-je l'utiliser sur plusieurs appareils ?</summary><p>Oui. Votre compte fonctionne sur téléphone, tablette et ordinateur, avec les mêmes données.</p></details>
+<details><summary>Le devis est-il conforme à la loi française ?</summary><p>Oui : mentions obligatoires (SIRET, TVA, garantie décennale, acompte, validité) intégrées au PDF.</p></details>
+<details><summary>Puis-je résilier à tout moment ?</summary><p>Oui, sans frais ni préavis. Vos devis restent exportables.</p></details>
+<details><summary>Et si je n'aime pas ?</summary><p>L'essai de 14 jours est gratuit et sans carte bancaire. Vous ne payez que si c'est utile.</p></details>
+</section>
+
+<div class="cta-final">
+<h2>Le prochain chantier se joue sur la vitesse du devis.</h2>
+<p style="color:var(--muted);margin-bottom:20px">Celui qui envoie son devis en premier gagne le plus souvent.</p>
+<a class="btn" href="app.html">⚡ Essayer DevisFlash gratuitement</a>
+</div>
+</div>
+
+<footer>© 2026 DevisFlash — Fait pour les artisans.</footer>
+</body>
+</html>

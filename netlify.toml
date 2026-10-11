@@ -1,0 +1,5 @@
+# Configuration Netlify — DevisFlash
+# Functions monofichiers, zéro dépendance npm.
+
+[build]
+  functions = "netlify/functions"
